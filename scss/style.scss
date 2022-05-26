@@ -92,6 +92,7 @@ h4 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
   font-size: large;
+  color: #ffffff;
 }
 h5 {
   text-align: left;
@@ -127,10 +128,21 @@ button {
   text-align: map-get($estilo, centro);
   color: map-get($estilo, letra);
 }
-.institucional {
-  background-color: $secondary-color;
+
+.background {
+  background-image: url(https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-de-madera-gris-mas-de-39-imagenes.-fondo-de-pantalla-de-madera-1024x640.jpg);
 }
 
+.fino {
+  max-width: 250px;
+  max-height: 250px;
+  padding-top: 10px;
+}
+.mergebackground {
+  background-image: url(https://labotex.com.ar/wp-content/uploads/2019/07/Sublimacio%CC%81n-de-prendas-a01-1.jpg);
+  background-color: $primary-color;
+  background-blend-mode: soft-light;
+}
 @mixin flex-column-center {
   display: flex;
   flex-direction: column;
