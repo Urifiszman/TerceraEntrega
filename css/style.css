@@ -131,6 +131,23 @@ button {
 
 .background {
   background-image: url(https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-de-madera-gris-mas-de-39-imagenes.-fondo-de-pantalla-de-madera-1024x640.jpg);
+  background-size: 1920px;
+  background-repeat: no-repeat;
+}
+
+.backgroundprincipal {
+  background-image: url(https://www.brildor.com/blog/wp-content/uploads/2010/11/cabecera-preguntas-basicas-sobre-sublimacion-1536x871.jpg);
+  background-color: #006bac;
+  background-blend-mode: lighten;
+  background-size: 1980px;
+  background-repeat: no-repeat;
+}
+
+.backgroundinstitucional {
+  background-image: url(https://colormake.com/wp-content/uploads/2018/04/IMG-2191.jpg), linear-gradient(to right, #006bac, #008835);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .fino {
@@ -143,6 +160,8 @@ button {
   background-image: url(https://labotex.com.ar/wp-content/uploads/2019/07/Sublimacio%CC%81n-de-prendas-a01-1.jpg);
   background-color: #006bac;
   background-blend-mode: soft-light;
+  background-size: 1480px;
+  background-repeat: no-repeat;
 }
 
 .section {
@@ -204,6 +223,18 @@ button {
 
   .card {
     width: 200px;
+  }
+
+  .backgroundinstitucional {
+    background-image: linear-gradient(to right, #006bac, #008835);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+  }
+
+  .background {
+    background-image: url(https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-de-madera-gris-mas-de-39-imagenes.-fondo-de-pantalla-de-madera-1024x640.jpg);
+    background-size: 1920px;
+    background-repeat: repeat;
   }
 }
 
