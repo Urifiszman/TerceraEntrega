@@ -1,38 +1,53 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
   background-color: #006bac;
 }
+
 header nav {
-  height: 50px;
+  height: 20vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 header nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header nav li {
   margin-right: 1.5rem;
 }
+
 header nav li a {
   text-decoration: none;
   color: white;
 }
 
 .categories {
-  justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.15);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .category-item {
@@ -51,32 +66,55 @@ header nav li a {
 main {
   width: 100%;
 }
+
 main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 main div ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
   background-color: #008835;
 }
+
 footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .centrar {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {
@@ -121,14 +159,21 @@ h6 {
 }
 
 .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 5px;
 }
 
 .promotions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 5px;
 }
 
@@ -146,13 +191,13 @@ button {
 
 .index-background {
   background-image: url(https://www.brildor.com/blog/wp-content/uploads/2010/11/cabecera-preguntas-basicas-sobre-sublimacion-1536x871.jpg);
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: color-burn;
+  background-color: #000;
   background-size: 1980px;
   background-repeat: no-repeat;
 }
 
 .backgroundinstitucional {
+  background-image: url(https://colormake.com/wp-content/uploads/2018/04/IMG-2191.jpg), -webkit-gradient(linear, left top, right top, from(#006bac), to(#008835));
   background-image: url(https://colormake.com/wp-content/uploads/2018/04/IMG-2191.jpg), linear-gradient(to right, #006bac, #008835);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
@@ -174,77 +219,100 @@ button {
 }
 
 .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1350px) {
   main div ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100px;
     height: 100px;
   }
-
   .alinear {
     padding-left: auto;
   }
 }
+
 @media (max-width: 810px) {
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
-
   nav ul li {
     display: none;
   }
-
   main div ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 50px;
     height: 50px;
   }
-
   .alinear {
     padding-left: 25%;
   }
-
   .h1 {
     background-color: #008835;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .card {
     width: 200px;
   }
-
   .backgroundinstitucional {
+    background-image: -webkit-gradient(linear, left top, right top, from(#006bac), to(#008835));
     background-image: linear-gradient(to right, #006bac, #008835);
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
   }
-
   .background {
     background-image: url(https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-de-madera-gris-mas-de-39-imagenes.-fondo-de-pantalla-de-madera-1024x640.jpg);
     background-size: 1920px;
     background-repeat: repeat;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
