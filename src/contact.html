@@ -52,17 +52,27 @@
     </header>
     <main>
         <div class="container">
-            <div class="section">
-                <div class="products">
-                    <label for="mail">Mail de contacto</label>
-                    <input type="text" name="mail"></form>
-                    <label for="phone">Número de contacto</label>
-                    <input type="text" name="phone"></form>
-                    <label for="consulta">Ingrese su consulta</label>
-                    <input type="text" name="consulta"></form>
-                    <button>Enviar</button>
+            <form>
+                <div class="mb-0">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-            </div>
+                <div class="mb-0">
+                    <label for="exampleInputPassword1" class="form-label">Mail</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <form class="was-validated">
+                    <div class="mb-0">
+                        <label for="validationTextarea">Ingrese su mensaje</label>
+                        <textarea class="form-control is-invalid" id="validationTextarea"
+                            placeholder="Ingrese su mensaje" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor ingrese su mensaje
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
         </div>
     </main>
     <footer>
