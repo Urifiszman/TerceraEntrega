@@ -36,14 +36,35 @@ main {
     }
   }
 }
+.section {
+  margin: 15px 0 10px 0;
+}
 footer {
-  background-color: $secondary-color;
+  padding: 10px;
+  background-color: $primary-color;
   div {
     display: flex;
     justify-content: space-around;
   }
 }
-
+.footer-item {
+  align-items: center;
+}
+.footer-image {
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+#instagram-link {
+  color: black;
+  text-decoration: none;
+}
+.table {
+  color: white;
+}
+.about-title {
+  color: white;
+}
 .centrar {
   justify-content: center;
 }
@@ -53,7 +74,10 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
-
+.add-product {
+  background-color: $primary-color;
+  color: white;
+}
 h1 {
   color: $primary-color;
   text-align: left;
@@ -112,10 +136,10 @@ button {
   color: map-get($estilo, letra);
 }
 
-.background {
+.products-background {
   background-image: url(https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-de-madera-gris-mas-de-39-imagenes.-fondo-de-pantalla-de-madera-1024x640.jpg);
   background-size: 1920px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .index-background {
@@ -198,9 +222,7 @@ button {
     flex-direction: column;
     align-items: center;
   }
-  .card {
-    width: 200px;
-  }
+
   .backgroundinstitucional {
     background-image: linear-gradient(
       to right,
