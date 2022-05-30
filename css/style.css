@@ -7,28 +7,6 @@
 header {
   background-color: #006bac;
 }
-header nav {
-  height: 50px;
-  width: 100%;
-  display: flex;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  justify-content: space-around;
-}
-header nav ul {
-  list-style: none;
-  display: flex;
-}
-header nav div {
-  display: flex;
-  align-items: center;
-}
-header nav li {
-  margin-right: 1.5rem;
-}
-header nav li a {
-  text-decoration: none;
-  color: white;
-}
 
 .categories {
   justify-content: space-around;
@@ -202,8 +180,8 @@ button {
     grid-template-rows: auto;
   }
 
-  nav ul li {
-    display: none;
+  .category-item {
+    height: 40px;
   }
 
   main div ul li {
