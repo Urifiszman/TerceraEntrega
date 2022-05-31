@@ -51,28 +51,29 @@
         </nav>
     </header>
     <main>
+        <h2>Contacto</h2>
         <div class="container">
             <form>
-                <div class="mb-0">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="form-group">
+                    <label class="item-form" for="formGroupExampleInput">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre">
                 </div>
-                <div class="mb-0">
-                    <label for="exampleInputPassword1" class="form-label">Mail</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="form-group">
+                    <label class="item-form" for="formGroupExampleInput2">Mail</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingresa tu mail">
                 </div>
-                <form class="was-validated">
-                    <div class="mb-0">
-                        <label for="validationTextarea">Ingrese su mensaje</label>
-                        <textarea class="form-control is-invalid" id="validationTextarea"
-                            placeholder="Ingrese su mensaje" required></textarea>
-                        <div class="invalid-feedback">
-                            Por favor ingrese su mensaje
-                        </div>
+            </form>
+            <form class="was-validated">
+                <div class="second-form-group">
+                    <label class="second-item-form" for="validationTextarea">Ingrese su mensaje</label>
+                    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Ingrese su mensaje"
+                        required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor ingrese su mensaje
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
     </main>
     <footer>

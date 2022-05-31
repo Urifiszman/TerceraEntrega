@@ -184,6 +184,27 @@ button {
   background-repeat: no-repeat;
 }
 
+.form-control {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.item-form {
+  margin: 10px 30px 0px 0px;
+}
+
+.second-item-form {
+  margin: 0px 50px 0px 0px;
+}
+
+#formGroupExampleInput2 {
+  margin-left: 50px;
+}
+
+#formGroupExampleInput {
+  margin-left: 20px;
+}
+
 .section {
   display: flex;
   flex-direction: column;
